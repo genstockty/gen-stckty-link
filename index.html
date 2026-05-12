@@ -107,8 +107,10 @@
         }
 
         body {
-            background: radial-gradient(circle at top left, #1a1c4b 0%, #0b1326 50%),
-                radial-gradient(circle at bottom right, #4a1d4b 0%, #0b1326 60%);
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             min-height: 100vh;
             scroll-behavior: smooth;
             overflow-x: hidden;
@@ -321,41 +323,11 @@
                 </a>
             </div>
 
-            <!-- Newsletter Section -->
-            <div class="mt-section-margin w-full text-left entrance-anim delay-4">
-                <h3 class="font-headline-md text-headline-md text-primary mb-4 text-shadow-strong">Stay Connected</h3>
-                <div class="glass-card bg-white/5 p-6 rounded-2xl border-dashed border-white/20">
-                    <p class="font-body-md text-body-md text-on-surface-variant mb-4 opacity-90">Subscribe to my weekly
-                        newsletter on tech trends.</p>
-                    <form id="newsletterForm" class="flex flex-col sm:flex-row gap-2">
-                        <input required
-                            class="flex-grow bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-on-surface placeholder-white/30 focus:outline-none focus:border-white/40 focus:ring-0 transition-colors font-body-md text-body-md backdrop-blur-md"
-                            placeholder="email@example.com" type="email" />
-                        <button type="submit"
-                            class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-xl hover:bg-opacity-90 transition-all shadow-lg active:scale-95">Join</button>
-                    </form>
-                </div>
-            </div>
         </div>
     </main>
-
-    <!-- Footer -->
-    <footer class="w-full py-8 border-t border-white/5 entrance-anim delay-5">
-        <div class="flex flex-col items-center gap-4 max-w-container-max mx-auto px-gutter">
-            <div class="flex gap-6">
-                <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-70 hover:opacity-100"
-                    href="#">Privacy</a>
-                <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-70 hover:opacity-100"
-                    href="#">Terms</a>
-                <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-70 hover:opacity-100"
-                    href="#">Support</a>
-            </div>
-            <p class="font-label-sm text-label-sm text-on-surface-variant opacity-50">© 2024 Lumina Bio. All rights
-                reserved.</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
 
 </html>
+>
